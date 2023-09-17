@@ -1,0 +1,68 @@
+*{
+
+    padding :0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+
+    background-size: cover;
+    background: url(homeback.jpg) center;
+
+    font-family:sans-serif;
+}
+
+.menu
+{
+background: #0090ff;
+    text-align: center;
+
+}
+.menu ul{
+
+    display: inline-flex;
+    list-style: none;
+    colour:#fff;
+}
+.menu ul li{
+    width: 120px;
+    margin: 15px;
+    padding:15px;
+}
+.menu ul li a{
+
+    text-decoration: none;
+    color: black;
+}
+.menu ul li :hover
+{
+    background: aqua;
+    border-radius: 3px;
+}
+.submenu-place{
+display: none;
+
+}
+.menu ul li:hover .submenu-place
+{
+     display:block;
+    position: absolute;
+    background: beige;
+    margin-top: 15px;
+    margin-left: -15px;
+}
+.menu ul li:hover .submenu-place ul{
+
+    display: block;
+    margin: 10px;
+}
+
+.menu ul li:hover .submenu-place ul li
+{
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px dotted #ffffff;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+}
